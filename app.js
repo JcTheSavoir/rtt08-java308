@@ -25,5 +25,3 @@ console.log("Hello" - " World"); // Invalid, cannot use -
         console.log(name[2]); // i
         console.log("Hello World"[4]); // o 
         //KEEP IN MIND : Indexes start with the number 0, which is important for picking which line to read off of
-
-        
