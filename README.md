@@ -69,3 +69,148 @@ let theNumber3 = 9
         // ex: 
         // console.log(typeof student.name)  would show as a "String" in 
         // the console (in browser > dev tools > console)
+
+//-------Logical Operators
+    // -- && Operators, compares two or more conditions results and returns 'true', 'false', or 'null'
+let thisLogic = 3 > 3 && 6 == 6; //since 3 is not greater than 3, it prints false
+let thisLogic2 = 3 > 2 && 6 == 6; //since both statements are correct, it prints true
+
+    // The || (logical OR) operator compares two or more conditions’ results and returns true when at least one is true
+let thisLogic3 = 3 > 2 || 6 == 6; // thisLogic is true
+let thisLogic4 = 3 > 2 || 6 == 7; // thisLogic is true
+
+    //The ! (logical NOT) operator negates a given result.
+let thisLogic5 = !(3 > 2 && 6 == 6); // thisLogic is false
+let thisLogic6 = !(3 > 2 || 6 == 7); // thisLogic is false
+
+//---------String Concatenation
+    //Concatenation is when two or more things are joined together. In JavaScript, the plus sign (+) operator is the only arithmetic operator that can be applied to a string. 
+console.log("Hello" + "World"); // outputs: Hello World
+console.log("This is" + " a String"); // outputs: This is a String
+console.log("The number is " + 5); // outputs: The number is 5
+console.log("Hello" - " World"); // Invalid, cannot use -
+
+    //---String Access 
+        //To read an individual character within a string, you can use square bracket notation, as follows:
+        const name = "Inigo Montoya";
+
+        console.log(name[2]); // i
+        console.log("Hello World"[4]); // o 
+        //KEEP IN MIND : Indexes start with the number 0, which is important for picking which line to read off of
+
+// let hasHousing = true;
+//     // global
+
+// const doChores = () => {
+//     // local
+// }
+// ---------------------------------[SCOPE ---> Global v. Local]
+
+// // -------------------------------{if..Else Statements} 
+// let drinkingAge = 18
+// let studentAge = 22
+// let parentConsent = false
+
+// // if( studentAge > drinkingAge ){
+// //     console.log("You can drink")
+// // }else{
+// //     console.log("Your Not Old Enough")
+// // }
+
+// if(studentAge > drinkingAge || parentConsent === true   ){
+//     console.log("You Can Drink")
+// }else{
+//     console.log("Nahh")
+// }
+// // -----------------------------------[EITHER of these above must be true to get first statement]
+
+// if(studentAge > drinkingAge && parentConsent === true   ){
+//     console.log("You Can Drink")
+// }else{
+//     console.log("Nahh")
+// }
+// // -----------------------------------[BOTH of these above must be true to get first statement]
+
+// if(drinkingAge > 18 ){
+//     console.log("Lets Drink!!")
+// }
+
+// let num = -10
+
+// if( num > 0){
+//     console.log(true)
+// }else {
+//     console.log(false)
+// }
+
+// let userAge= 19
+
+// if(userAge >= 18){
+//     console.log("Access Granted")
+// }else{
+//     console.log("Access DENIED!")
+// }
+
+// let number = 23
+
+// if(number > 0 && number >100){
+//     console.log("Positive and Greater than 100")
+// }else if (number > 0 && number < 100){
+//     console.log("Positive but Less than 100")
+// }else{
+//     console.log("Number is negative")
+// }
+// /----------------------------------------------------{{EXAMPLES}}
+// const signUpUser = () => {};
+// const LoginUser = () => {};
+// const alertUser = () => {};
+
+// switch (userStatus) {
+//   case "newMember":
+//     signUpUser();
+//     break;
+//   case "existingMember":
+//     LoginUser();
+//     break;
+
+//   case "invalidUser":
+//     alertUser();
+//     break;
+
+//   default:
+//     break;
+// }
+// -------------------------------------------------------[SWITCH]
+// let x = 5;
+// let y = 4;
+// let operand = "*";
+// switch (operand) {
+//   case "+":
+//     console.log(x + y);
+//     break;
+//   case "-":
+//     console.log(x - y);
+//     break;
+//   case "*":
+//     console.log(x * y);
+//     break;
+//   case "/":
+//     console.log(x / y);
+//     break;
+//   default:
+//     console.log("Invalid Operand");
+//     break;
+// }
+// -------------------------------------------------------[SWITCH]
+// studentAge > 18  ? console.log("ofAge") : console.log("Not of Age")
+// -----------------------------------------------------------------{TERNARY}
+
+
+
+// try {
+//    fetch('https://www.nyke.com'){
+//     // return a response
+//    }
+// } catch (error) {
+//     console.log(error)
+// }
